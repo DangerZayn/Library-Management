@@ -1,0 +1,41 @@
+.header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#right-top {
+    position: absolute;
+    right: 20px;
+}
+
+.loading-window {
+    position: fixed;
+    top: 60px; /* Adjust this value to position the window below the header */
+    left: 10px; /* Adjust this value to position the window on the left side */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Set the width of the window */
+    height: 50px; /* Set the height of the window */
+    background-color: rgba(255, 255, 255, 0.8); /* Set the background color and opacity */
+    border-radius: 5px;
+    z-index: 999; /* Ensure the window appears above other elements */
+  }
+  
+  .loading-icon {
+    width: 30px; /* Set the size of the loading icon */
+    height: 30px;
+    border: 3px solid #333; /* Set the border color and width */
+    border-radius: 50%; /* Create a circle shape */
+    border-top-color: transparent; /* Hide the top border to create the loading effect */
+    animation: spin 1s linear infinite; /* Apply a spinning animation */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
